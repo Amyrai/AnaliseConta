@@ -26,15 +26,15 @@ namespace WindowsFormsApplication1
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = END_TXT;
+            toolStripStatusLabel1.Text = enderecoTxt;
         }
         private void tXTToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
-            END_TXT = openFileDialog1.FileName;
+            enderecoTxt = openFileDialog1.FileName;
 
 
-            toolStripStatusLabel1.Text = END_TXT;
+            toolStripStatusLabel1.Text = enderecoTxt;
 
             MessageBox.Show("Importação Concluída");
 
@@ -64,7 +64,7 @@ namespace WindowsFormsApplication1
         int numEnd;
 
             System.IO.StreamReader file =
-            new System.IO.StreamReader(END_TXT);
+            new System.IO.StreamReader(enderecoTxt);
 
 
             TABELA_1.Rows.Add(0, 0, 0, 0, 0, 0);
