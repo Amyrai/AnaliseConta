@@ -21,7 +21,7 @@ namespace WindowsFormsApplication1
         public Form1()
         {
 
-            END_TXT = "Nenhum Arquivo Selecionado";
+            enderecoTxt = "Nenhum Arquivo Selecionado";
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -73,7 +73,7 @@ namespace WindowsFormsApplication1
             {
                 nome = line;
 
-                
+                int teste;
 
                 System.Console.WriteLine(line);
                 counter++;
